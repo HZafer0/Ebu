@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Ebu_Logo.jpg" type="image/x-icon" />
+    <title>Ebu</title>
+</head>
+
+<body>
+    <!--Buraya bakacağını biliyordum. Kodları Rahat Bırak-->
+    <button onclick="x()"> <img id="Ebu1" src="Ebu_Foto1.jpg" alt="Ebu Resim" width=100%; max-width:1932px
+            height:auto;></button>
+
+    <audio id="Ebuses">
+        <source src="Ebu_Ses.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+        function x() {
+            document.getElementById("Ebu1").src = "Ebu_Foto2.jpeg";
+            var ses = document.getElementById("Ebuses");
+            ses.play();
+            setTimeout(function () {
+                document.getElementById("Ebu1").src = "Ebu_Foto1.jpg";
+            }, 1300);
+
+        }
+    </script>
+    <br />
+    <h4 style="text-align:center; position:fixed ; bottom: 10px">by HZAFER<h4>
+
+</body>
+
+</html>
